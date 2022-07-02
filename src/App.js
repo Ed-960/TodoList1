@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import { useState } from "react";
 import './App.css';
+import TodoForm from "./components/TodoForm/TodoForm";
+import TodoList from "./components/TodoList/TodoList";
+import TodoSearch from "./components/TodoSearch/TodoSearch";
 
 function App() {
+
+  const todos = [
+    {
+      id: 1,
+      text: "Learn HTML and CSS",
+    },
+    {
+      id: 2,
+      text: "Learn CSS",
+    },
+    {
+      id: 3,
+      text: "Learn React",
+    }
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TodoForm />
+      <TodoSearch />
+      <TodoList todos={todos} />
     </div>
   );
 }
-
 export default App;

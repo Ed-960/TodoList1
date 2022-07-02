@@ -1,0 +1,30 @@
+.item {
+   width: 500px;
+   margin-top: 15px;
+   background-color: rgb(62, 83, 62);
+   padding: 5px;
+   border-radius: 8px;
+}
+
+.item_btn_def {
+   float: right;
+   position: relative;
+   top: -19px;
+   left: -6px;
+   border: 0;
+   margin-left: 10px;
+   background-color: rgb(62, 83, 62);
+   font-weight: 600;
+   color: rgb(250, 11, 23);
+}
+
+.todoInput {
+   color: #000;
+   background-color: rgb(62, 83, 62);
+   border: none;
+   outline: none;
+}
+
+.btn_div {
+   width: 40px;
+}

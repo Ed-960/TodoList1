@@ -1,0 +1,22 @@
+.search_title {
+   width: 75px;
+   color: rgb(94, 90, 90);
+   padding: 0 15px 0 15px;
+   border-bottom: 1px solid red;
+   margin-left: 20%;
+}
+
+.search_input {
+   width: 327px;
+   padding: 5px;
+   border-radius: 12px;
+   background-color: rgb(62, 83, 62);
+}
+
+.default {
+   margin-left: 8px;
+   border: 0;
+   background-color: rgb(175, 13, 134);
+   border-radius: 5px;
+   padding: 5px;
+}
