@@ -7,7 +7,7 @@ class TodoItem extends React.Component {
       important: false,
       done: false,
       edit: true,
-      value: ""
+      value: this.props.todo.text
    }
 
    onImportantClick = (event) => {
@@ -30,15 +30,15 @@ class TodoItem extends React.Component {
    }
 
    onChange = (evt) => {
+      console.log(this.state.value);
       this.setState({
+
          value: evt.target.value,
       });
    }
 
    render() {
-
       let todo = this.state.edit ? this.props.todo : this.state.edit;
-
       //const todo1 = this.state.edit ? this.state.value : "";
       const style = {
          color: this.state.important ? 'red' : this.state.done ? 'green' : '#fff'
@@ -50,13 +50,13 @@ class TodoItem extends React.Component {
       return (
          <div className={styles.item}>
             <label
-               style={style}
             >
-               {todo.text}
                <input
+                  style={style}
                   readOnly={this.state.edit}
                   className={styles.todoInput}
                   type="text"
+                  value={this.state.value}
                   onChange={this.onChange}
                   placeholder={inputplaceholder}
                />
